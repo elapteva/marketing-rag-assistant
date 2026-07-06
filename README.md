@@ -1,1 +1,3 @@
-# rag-marketing-knowledge-assistant
+## Current Development
+
+Initial project structure created.

@@ -41,8 +41,8 @@ def process_document(filename: str, file_bytes: bytes) -> None:
 st.title("AI-Powered Marketing Report Analysis and Decision Support System")
 st.write("Upload a marketing report, inspect its content, and ask document-grounded questions.")
 
-upload_tab, analysis_tab, question_tab, architecture_tab = st.tabs(
-    ["1. Upload & Process", "2. Document Analysis", "3. Ask a Question", "4. Architecture"]
+upload_tab, analysis_tab, question_tab = st.tabs(
+    ["1. Upload & Process", "2. Document Analysis", "3. Ask a Question"]
 )
 
 with upload_tab:

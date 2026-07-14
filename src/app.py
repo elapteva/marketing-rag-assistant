@@ -38,7 +38,7 @@ def process_document(filename: str, file_bytes: bytes) -> None:
     st.session_state.pop("last_results", None)
     st.session_state.pop("last_answer", None)
 
-st.title("AI-Powered Marketing Knowledge Assistant")
+st.title("AI-Powered Marketing Report Analysis and Decision Support System")
 st.write("Upload a marketing report, inspect its content, and ask document-grounded questions.")
 
 upload_tab, analysis_tab, question_tab, architecture_tab = st.tabs(
@@ -116,22 +116,5 @@ with question_tab:
                 with st.expander(f"Source {i} — similarity {result.score:.3f}"):
                     st.write(result.text)
 
-with architecture_tab:
-    st.markdown("""
-### Presentation layer
-Streamlit login, file uploader, analysis dashboard, and question interface.
 
-### Application layer
-Session management, file validation, workflow coordination, and response display.
-
-### AI/RAG layer
-Text extraction, chunking, embeddings, semantic retrieval, prompt construction, and optional LLM generation.
-
-### Data layer
-Extracted text, chunks, and embeddings are held in the active Streamlit session.
-
-### Security controls
-Prototype authentication, file validation, and environment-variable API key management.
-""")
-    st.info("This is a classroom prototype, not a production authentication system.")
 

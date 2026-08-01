@@ -13,6 +13,7 @@ from retrieval import retrieve_relevant_chunks
 from utils import validate_uploaded_file
 from vector_store import InMemoryVectorStore
 
+
 load_dotenv()
 st.set_page_config(page_title="Marketing RAG Assistant", page_icon="📊", layout="wide")
 

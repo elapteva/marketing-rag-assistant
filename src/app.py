@@ -88,7 +88,7 @@ with question_tab:
     if store is None:
         st.warning("Process a report first.")
     else:
-        question = st.text_input("Question", placeholder="Which campaign performed best?")
+        question = st.text_input("Question", placeholder="Enter your question here")
         top_k = st.slider("Supporting sections", 1, 5, 3)
         if st.button("Retrieve evidence and answer", type="primary", use_container_width=True):
             if not question.strip():

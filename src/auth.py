@@ -25,6 +25,6 @@ def render_login() -> bool:
             st.rerun()
         else:
             st.error("Incorrect username or password.")
-    st.info("Demo login: student / capstone123")
+    
     return False
 
